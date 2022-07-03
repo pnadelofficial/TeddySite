@@ -27,3 +27,11 @@ def music_index(request):
         "albums": albums
     }
     return render(request, "projects/music_index.html", context)
+
+def album_detail(request, album):
+    songs = Song.objects.all().order_by('-created_on').filter(album=album)
+    context = {
+        "album": album,
+        "songs": songs
+    }
+    return render(request, "projects/album_detail.html", context)
