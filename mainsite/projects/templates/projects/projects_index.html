@@ -1,0 +1,39 @@
+{% load static %}
+{% include 'projects/base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects Index</title>
+</head>
+<body>
+    <div class="row">
+        <div class="col-sm-6">
+            <h4 class="text-center">Writing</h4>
+            {% for collection in collections %}
+            <div class="card">
+                <img src="{{ collection.image.url }}" class="card-img-top" alt="IMAGE">
+                <div class="card-body">
+                    <h5 class="card-title">collection.name</h5>
+                    <a href="#">Read</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="col-sm-6">
+            <h4 class="text-center">Music</h4>
+            {% for album in albums %}
+            <div class="card">
+                <img src="{{ album.image.url }}" class="card-img-top" alt="IMAGE">
+                <div class="card-body">
+                    <h5 class="card-title">album.name</h5>
+                    <a href="#">Listen</a>
+                </div>
+            </div>
+            {% endfor %}        
+        </div>
+    </div>
+</body>
+</html>
