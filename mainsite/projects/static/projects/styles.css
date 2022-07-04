@@ -15,5 +15,6 @@ body{
     width: 50%;
 }
 #right{
+    text-align: right;
     position: fixed;
 }
