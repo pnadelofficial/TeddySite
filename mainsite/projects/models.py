@@ -21,7 +21,7 @@ class Article(models.Model):
 class Album(models.Model):
     name = models.CharField(max_length=255)
     created_on = models.DateTimeField(auto_now=True)
-    image = models.ImageField()
+    image = models.ImageField(upload_to='project_images/', null=True)
 
 class Song(models.Model):
     title = models.CharField(max_length=255)
