@@ -20,7 +20,7 @@
                     <div class="card-body">
                       <h5 class="card-title">{{ album.name }}</h5>
                       <p class="card-text">Lorem Ipsum</p>
-                      <a href="#" class="btn btn-primary">Listen</a>
+                      <a href="{% url 'album_detail' album.id %}" class="btn btn-primary">Listen</a>
                     </div>
                 </div>
                 <br>
