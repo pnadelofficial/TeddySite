@@ -5,7 +5,7 @@ from ckeditor.fields import RichTextField
 class Collection(models.Model):
     name = models.CharField(max_length=20)
     created_on = models.DateTimeField(auto_now_add=True)
-    image = models.ImageField()
+    image = models.ImageField(upload_to='project_images/', null=True)
 
 class Article(models.Model):
     title = models.CharField(max_length=255)
