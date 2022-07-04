@@ -11,7 +11,7 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-sm-9">
+            <div class="col-sm">
                 {% for album in albums %}
                 <div class="card" style="width: 18rem;">
                     <img src="{{ album.image.url }}" class="card-img-top" alt="IMAGE">
@@ -23,7 +23,7 @@
                 </div>
                 {% endfor %}
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm">
                 <h3>My Music</h3>
             </div>
         </div>
