@@ -1,0 +1,19 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 150%;
+    background: linear-gradient(to bottom, #e19292 0%, #ede27b 50%,#8adcbe 100%);
+    background-attachment: fixed;
+}
+.navbar-nav > li{
+    padding-left:30px;
+    padding-right:30px;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+div.col-sm-3 {
+    position: fixed
+}
