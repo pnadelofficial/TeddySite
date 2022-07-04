@@ -11,7 +11,9 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-9">
+            <div class="col-9" style="
+                margin-left: 10%;
+            ">
                 {% for album in albums %}
                 <div class="card" style="width: 18rem;">
                     <img src="{{ album.image.url }}" class="card-img-top" alt="IMAGE">
@@ -24,7 +26,11 @@
                 <br>
                 {% endfor %}
             </div>
-            <div id="right" class="col-3">
+            <div id="right" class="col-3" style="
+                text-align: right;
+                position: fixed;
+                margin-left: 50%;
+            ">
                 <h3>My Music</h3>
                 <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ullamcorper leo in tellus iaculis posuere. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas porta efficitur dignissim. 
