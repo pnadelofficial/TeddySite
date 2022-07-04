@@ -9,9 +9,9 @@
     <title>Music Index</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container justify-content-center">
         <div class="row">
-            <div class="col-9 justify-content-center">
+            <div class="col-9">
                 {% for album in albums %}
                 <div class="card" style="width: 18rem;">
                     <img src="{{ album.image.url }}" class="card-img-top" alt="IMAGE">
@@ -24,7 +24,7 @@
                 <br>
                 {% endfor %}
             </div>
-            <div id="right" class="col-3 justify-content-center">
+            <div id="right" class="col-3">
                 <h3>My Music</h3>
                 <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ullamcorper leo in tellus iaculis posuere. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas porta efficitur dignissim. 
