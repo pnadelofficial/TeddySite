@@ -9,21 +9,23 @@
     <title>Music Index</title>
 </head>
 <body>
-    <div class="row">
-        <div class="col-sm-9">
-            {% for album in albums %}
-            <div class="card" style="width: 18rem;">
-                <img src="{{ album.image.url }}" class="card-img-top" alt="IMAGE">
-                <div class="card-body">
-                  <h5 class="card-title">{{ album.name }}</h5>
-                  <p class="card-text">Lorem Ipsum</p>
-                  <a href="#" class="btn btn-primary">Listen</a>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-9">
+                {% for album in albums %}
+                <div class="card" style="width: 18rem;">
+                    <img src="{{ album.image.url }}" class="card-img-top" alt="IMAGE">
+                    <div class="card-body">
+                      <h5 class="card-title">{{ album.name }}</h5>
+                      <p class="card-text">Lorem Ipsum</p>
+                      <a href="#" class="btn btn-primary">Listen</a>
+                    </div>
                 </div>
+                {% endfor %}
             </div>
-            {% endfor %}
-        </div>
-        <div class="col-sm-3">
-            <h3>My Music</h3>
+            <div class="col-sm-3">
+                <h3>My Music</h3>
+            </div>
         </div>
     </div>
     <!-- <div class="row">
