@@ -10,10 +10,10 @@
 </head>
 <body>
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-9">
+        <div class="row">
+            <div class="col-9 justify-content-center">
                 {% for album in albums %}
-                <div class="card justify-content-center" style="width: 18rem;">
+                <div class="card" style="width: 18rem;">
                     <img src="{{ album.image.url }}" class="card-img-top" alt="IMAGE">
                     <div class="card-body">
                       <h5 class="card-title">{{ album.name }}</h5>
@@ -24,7 +24,7 @@
                 <br>
                 {% endfor %}
             </div>
-            <div id="right" class="col-3">
+            <div id="right" class="col-3 justify-content-center">
                 <h3>My Music</h3>
                 <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ullamcorper leo in tellus iaculis posuere. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas porta efficitur dignissim. 
