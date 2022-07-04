@@ -15,5 +15,5 @@ body{
     width: 50%;
 }
 #right{
-    position: sticky;
+    position: fixed;
 }
