@@ -11,6 +11,7 @@
 <body>
     {% for song in songs %}
         <p>{{ song.title }}</p>
+        <audio src="{{ song.audio_file }}"></audio>
     {% endfor %}
 
     <div id="right" class="col-3" style="
