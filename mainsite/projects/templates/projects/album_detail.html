@@ -9,11 +9,20 @@
     <title>Album Detail</title>
 </head>
 <body>
-    {% for song in songs %}
-        <p>{{ song.title }}</p>
-        <audio controls src="{{ song.audio_file.url }}"></audio>
-    {% endfor %}
-
+    <div class="row">
+        <div class="col-sm-9">
+            {% for song in songs %}
+            <div class="row">
+                <div class="col-8 col-sm-6">
+                    {{ song.title }}
+                </div>
+                <div class="col-4 col-sm-6">
+                    <audio controls src="{{ song.audio_file.url }}"></audio>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
     <div id="right" class="col-3" style="
         text-align: right;
         position: fixed;
