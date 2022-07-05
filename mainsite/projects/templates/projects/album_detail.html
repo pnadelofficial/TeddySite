@@ -9,9 +9,17 @@
     <title>Album Detail</title>
 </head>
 <body>
-    <h4>{{ album.name }}</h4>
     {% for song in songs %}
         <p>{{ song.title }}</p>
     {% endfor %}
+
+    <div id="right" class="col-3" style="
+        text-align: right;
+        position: fixed;
+        margin-left: 50%;
+    ">
+        <h4>{{ album.name }}</h4>
+        <img src="{{ album.image.url }}" alt="">
+    </div>
 </body>
 </html>
