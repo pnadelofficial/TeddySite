@@ -12,6 +12,7 @@
     <div class="row">
         <div class="col-9">
             {% for song in songs %}
+            <br>
             <div class="row">
                 <div class="col-8 col-sm-6 text-center">
                     {{ song.title }}
@@ -20,6 +21,7 @@
                     <audio controls src="{{ song.audio_file.url }}"></audio>
                 </div>
             </div>
+            <hr>
             {% endfor %}
         </div>
         <div id="right" class="col-3" style="
