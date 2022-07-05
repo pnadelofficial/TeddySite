@@ -26,7 +26,7 @@ class Album(models.Model):
 class Song(models.Model):
     title = models.CharField(max_length=255)
     created_on = models.DateTimeField(auto_now_add=True)
-    audio_file = models.FileField(blank=True,null=True)
+    audio_file = models.FileField(upload_to='project_audio/', blank=True,null=True)
     audio_link = models.CharField(max_length=200,blank=True,null=True)
     album = models.ForeignKey(Album, on_delete=models.CASCADE)
 
