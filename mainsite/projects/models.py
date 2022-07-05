@@ -13,7 +13,7 @@ class Article(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
     last_modified = models.DateTimeField(auto_now=True)
     collection = models.ForeignKey(Collection, on_delete=models.CASCADE)
-    article_file = models.FileField(upload_to='article_files/', null=True)
+    article_file = models.FileField(upload_to='article_files/', blank=True, null=True)
 
     def __str__(self):
         return self.title

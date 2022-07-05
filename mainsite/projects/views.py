@@ -28,6 +28,15 @@ def music_index(request):
     }
     return render(request, "projects/music_index.html", context)
 
+def collection_detail(request, collection):
+    articles = Article.objects.all().order_by('-created_on').filter(collection=collection).reverse()
+    collection_obj = Collection.objects.get(pk=collection)
+    context = {
+        "collection": collection_obj,
+        "articles": articles
+    }
+    return render(request, "projects/collection_detail.html", context)
+
 def album_detail(request, album):
     songs = Song.objects.all().order_by('-created_on').filter(album=album).reverse()
     album_obj = Album.objects.get(pk=album)
