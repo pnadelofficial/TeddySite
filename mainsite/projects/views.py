@@ -29,7 +29,7 @@ def music_index(request):
     return render(request, "projects/music_index.html", context)
 
 def album_detail(request, album):
-    songs = Song.objects.all().order_by('-created_on').filter(album=album)
+    songs = Song.objects.all().order_by('-created_on').filter(album=album).reverse()
     album_obj = Album.objects.get(pk=album)
     context = {
         "album": album_obj,
