@@ -9,8 +9,16 @@
     <title>Collection Detail</title>
 </head>
 <body>
-    {{ article.title }}
-    <br>
-    {{ article.body | safe }}
+    <div>
+        <h2><b>{{ article.title | safe }}</b></h2>
+    </div>
+    <hr>
+    <div style="
+        padding-left: 30%;
+        padding-right: 30%;
+        background-color: beige;
+    ">
+        {{ article.body | safe }}
+    </div>
 </body>
 </html>
