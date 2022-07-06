@@ -9,14 +9,17 @@
     <title>Collection Detail</title>
 </head>
 <body>
-    <div style="padding-left: 30%">
+    <div style="padding-left: 20%">
         <h2><b>{{ article.title | safe }}</b></h2>
     </div>
     <hr>
-    <div class="container">
+    <div class="container" style="
+        padding-left: 15%;
+        padding-right: 15%;
+    ">
         <div style="
-            padding-left: 30%;
-            padding-right: 30%;
+            padding-left: 10%;
+            padding-right: 10%;
             background-color: beige;
         ">
             {{ article.body | safe }}
