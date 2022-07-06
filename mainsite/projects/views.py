@@ -45,3 +45,10 @@ def album_detail(request, album):
         "songs": songs
     }
     return render(request, "projects/album_detail.html", context)
+
+def article_detail(request, collection, article):
+    article_obj = Article.objects.all().filter(collection=collection).get(pk=article)
+    context = {
+        "article": article_obj
+    }
+    return render(request, "projects/article_detail.html", context)

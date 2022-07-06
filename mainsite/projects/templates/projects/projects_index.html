@@ -17,7 +17,7 @@
                 <img src="{{ collection.image.url }}" class="card-img-top" alt="IMAGE">
                 <div class="card-body">
                     <h5 class="card-title">collection.name</h5>
-                    <a href="#">Read</a>
+                    <a href="{% url 'collection_detail' collection.id %}">Read</a>
                 </div>
             </div>
             {% endfor %}
@@ -29,7 +29,7 @@
                 <img src="{{ album.image.url }}" class="card-img-top" alt="IMAGE">
                 <div class="card-body">
                     <h5 class="card-title">{{ album.name }}</h5>
-                    <a href="#">Listen</a>
+                    <a href="{% url 'album_detail' album.id %}">Listen</a>
                 </div>
             </div>
             {% endfor %}        
